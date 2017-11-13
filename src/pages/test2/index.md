@@ -1,8 +1,8 @@
 ---
-path: '/test'
+path: '/test2'
 title: 'This is a test'
 ---
 
-##### Towel
+##### Towel!!!!
 
 How is everyone tonight

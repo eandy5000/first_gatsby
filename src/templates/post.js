@@ -1,11 +1,12 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import Helment from 'react-helmet';
 
-function Template ({data}) {
-    const {markdownRemark: post} = data;
+function Template(props) {
+    const {markdownRemark: post} = props.data;
+
     return (
         <div>
-            <h1>{post.frontmatter.title}</h1>
+            <h2>{post.frontmatter.title}</h2>
             <div dangerouslySetInnerHTML={{__html: post.html}} />
         </div>
     );
@@ -20,7 +21,7 @@ export const postQuery = graphql`
             frontmatter {
                 path
                 title
-            } 
+            }
         }
     }
-`;
+`
